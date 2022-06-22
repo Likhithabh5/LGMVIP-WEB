@@ -1,0 +1,63 @@
+#heading{
+    color: darkblue;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin: 20px;
+    font-size: 60px;
+}
+body{
+    text-align: center !important;
+    align-items: center !important;
+    margin: 0px auto !important;
+    background-color: #9e9e9e !important;
+}
+
+#mainDiv{
+    display: inline-block;
+    background-color: #f6ebf4;
+    width: 70%;
+    height: 500px;
+    border: 2px solid #5e5c5c;
+    box-shadow: 3px 3px  #D8A685 !important;
+    padding: 30px;
+}
+
+.form-control{
+    display: inline-block !important;
+    width: 60% !important;
+    height: 50px !important;
+    font-size: 18px !important;
+    margin-top: 10px !important;
+}
+
+.btn-primary{
+    margin: 10px;
+    width: 100px !important;
+    height: 50px !important;
+    font-size: 18px !important;
+}
+#delete-all{
+    margin: 10px;
+    width: 100px !important;
+    height: 50px !important;
+    font-size: 18px !important;
+}
+
+#todo-items{
+    margin: 10px;
+}
+
+#todo-items ul li button{
+    float: right;
+    margin-right: 5px;
+}
+
+#todo-items ul li{
+    text-align: left;
+    font-size: 18px;
+    margin: 2px;
+}
+
+#inputDiv{
+    border-bottom: 2px solid #808080;
+}

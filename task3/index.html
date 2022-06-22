@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Enrollment Form</h1>
+    <hr>
+     <div id="container">
+        <div class="name">
+            <label>Name</label>
+            <input type="text" id="name" name="Name" placeholder="Enter your name">
+        </div>
+        
+        <div class="email">
+            <label>Email</label>
+            <input type="email" id="email" name="Email" placeholder="Enter your Email ID">
+        </div>
+        
+        <div class="websitelink">
+            <label>Website</label>
+            <input type="text" id="websitelink" name="Website" placeholder="Enter your Website Link">
+        </div>
+        
+        <div class="img">
+            <label>Image Link</label>
+            <input type="text" id="img" name="Image Link" placeholder="Enter your img Id">
+        </div>
+        
+        <div class="gender">
+            <label>Gender:</label>
+            <br>
+            <input type="radio" value="Male" name="gender" checked > Male   
+            <input type="radio" value="Female" name="gender"> Female   
+        </div>
+
+        <div class="skills">
+            <label>Skills:</label>
+            <br>
+            <input type="radio" value="HTML" name="skills">HTML
+            <input type="radio" value="CSS" name="skills">CSS
+            <input type="radio" value="Java" name="skills">Java
+        </div>
+        <button id="entry">Submit</button>
+     </div>
+     <table id="display">
+         <tr>
+             <th>Name</th>
+             <th>Email</th>
+             <th>Image</th>
+             <th>Website</th>
+             <th>Gender</th>
+             <th>Skills</th>
+         </tr>
+     </table>
+    <script src="app.js"></script>
+</body>
+</html>
