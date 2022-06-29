@@ -1,7 +1,6 @@
 var form = document.querySelector("#userForm");
 const allUsersData = [];
 
-// ------------------function to reset the form------------------
 const resetForm = function () {
   form.classList.remove('was-validated')
   const name = document.getElementById('name');
@@ -26,8 +25,6 @@ const resetForm = function () {
     rb.checked = false;
   }
 };
-
-// --------------------function to get the data of the form----------------------
 
 const getData = function () {
   const name = document.getElementById('name').value;
@@ -54,8 +51,6 @@ const getData = function () {
   return { name, email, website, image, gender, skills };
 };
 
-//-----------------------adding event listner to the "enroll student" button with type submit to submit the form
-
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   if (form.checkValidity()) {
@@ -63,25 +58,19 @@ form.addEventListener("submit", function (event) {
     allUsersData.push(data);
     printResult(data);
     resetForm();
-
-
-  } else {
+  } 
+  else {
     form.classList.add('was-validated');
   };
   removeSpan();
 });
-
-// --------------function to remove the span tag ("fill the form to enroll the students")
 
 function removeSpan() {
   var span = document.getElementById("span");
   if(span){
     span.remove();
   }
-  
 };
-
-// ------------------function to print the form data in the right side of div by genrating html elments inside the div.
 
 function printResult(data) {
   const resultEl = document.getElementById('enrolled-students');
@@ -109,7 +98,6 @@ function printResult(data) {
       console.log('aaadfasdfasdf');
       e.currentTarget.remove();
     }
-
   });
 
   const deleteBtn = document.createElement('button');
@@ -125,7 +113,6 @@ function printResult(data) {
   const imageHyperlink = document.createElement('a');
   imageHyperlink.href = data.image;
   imageHyperlink.target = "_blank";
-
 
   let name = document.createElement('p');
   name.className = "infoText userName";
@@ -149,11 +136,9 @@ function printResult(data) {
   skills.className = "infoText skills";
   skills.innerHTML = data.skills.join(', ');
 
-
   let userImage = document.createElement('img');
   userImage.className = "userImage";
   userImage.src = data.image;
-
 
   textInfoContainer.append(name, gender, email, website, skills);
   imageHyperlink.appendChild(userImage);
@@ -166,5 +151,4 @@ function printResult(data) {
   } else {
     resultEl.append(sectionHeading, wrapper)
   };
-
 };

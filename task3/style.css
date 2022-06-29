@@ -3,18 +3,17 @@
     padding: 0;
   }
   
+  .d-flex {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
   :root {
-    /* color for main nav */
-    --bg-purple:  #600473;
-  
-    /* color for (description and image (tittled)) nav. */
-    --bg-green-yellow: #D07CA4;
-  
-    /* color for border */
+    --bg-purple: #600473;
+    --bg-red: #fa625f;
     --b-dark-yellow: #C12B72;
-  
-    /* color for new wrapper div */
-    --b-light-yellow: #fff;
+    --b-light-yellow: #fbf579;
   }
   
   .nav-bar {
@@ -29,18 +28,14 @@
     color: white;
   }
   
-  .d-flex {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
   .students {
     display: flex;
+    font-weight: bold;
+    font-style: normal;
     gap: 10px;
     height: auto;
     width: 100%;
-    background-color: #cf2bb47a; 
+    background-color: #ffe1d0; 
   }
   
   .enroll-student {
@@ -80,16 +75,8 @@
     margin-bottom: 16px;
   }
   
-  .seperation-border {
-    box-sizing: border-box;
-    box-shadow: 0px 0px 3px 0px var(--bg-light-green);
-    width: 1.3px;
-    height: 70vh;
-    background: var(--bg-light-green);
-  }
-  
   @media screen and (max-width: 768px) {
-    hr.seperation-border{
+    hr.separation-border{
       height: 0;
     }
   }
@@ -97,10 +84,10 @@
   .sectionHeading {
     display: flex;
     align-items: center;
-    background-color: var(--bg-green-yellow);
-    color: #fff;
+    background-color: var(--bg-red);
+    color: white;
     box-sizing: border-box;
-    border: solid 2px var(--b-dark-yellow);
+    border: solid 3px var(--b-dark-yellow);
   }
   
   .sectionHeading > p {
@@ -125,10 +112,6 @@
   .infoText {
     margin: 0;
     padding: 0;
-  }
-  
-  .userName {
-    font-weight: bold;
   }
   
   .wrapper {
@@ -158,8 +141,7 @@
   @media screen and (max-width: 768px) {
     button.userDeleteBtn {
       display:block;
-    }
-    
+    } 
   }
   
   .wrapper:hover .userDeleteBtn {
